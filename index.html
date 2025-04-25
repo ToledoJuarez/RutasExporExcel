@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Desperfectos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <h2>Ingresar/Editar Desperfecto</h2>
+            <label for="desperfecto">Desperfecto:</label>
+            <input type="text" id="desperfecto" required>
+
+            <label for="detalle">Detalle del Desperfecto:</label>
+            <textarea id="detalle" rows="4" required></textarea>
+
+            <div id="contenedor-postes">
+                <label>Postes (Opcional):</label>
+                <div id="postes-inputs">
+                    </div>
+                <button type="button" id="agregar-poste">Agregar Poste</button>
+            </div>
+
+            <button type="button" id="enviar-desperfecto" class="guardar">Guardar Desperfecto</button>
+        </div>
+
+        <div class="contenedor-tablas">
+            <div class="lista-desperfectos">
+                <h2>Lista de Desperfectos</h2>
+                <table id="tabla-lista-desperfectos">
+                    <thead>
+                        <tr>
+                            <th>SubRuta</th>
+                            <th>Desperfecto</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button type="button" id="actualizar-desperfecto">Actualizar</button>
+            </div>
+
+            <div class="tabla-desperfectos">
+                <h2>Detalle de Desperfectos</h2>
+                <table id="tabla-detalle-desperfectos">
+                    <thead>
+                        <tr>
+                            <th>SubRuta</th>
+                            <th>Desperfecto</th>
+                            <th>Detalle</th>
+                            <th>Poste</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="botones-tabla">
+                    <button type="button" id="exportar-excel">Exportar a Excel</button>
+                    <button type="button" id="eliminar-registros" class="eliminar">Eliminar Registros</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</body>
+</html>

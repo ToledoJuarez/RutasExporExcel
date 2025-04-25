@@ -1,0 +1,223 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+}
+
+.formulario, .tabla-desperfectos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.formulario {
+    width: 350px;
+}
+
+.formulario h2, .tabla-desperfectos h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+#contenedor-postes label {
+    margin-top: 10px;
+}
+
+#postes-inputs {
+    margin-bottom: 10px;
+}
+
+.poste-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.poste-input-group input[type="text"] {
+    flex-grow: 1;
+}
+
+.poste-input-group button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.poste-input-group button.eliminar {
+    background-color: #e74c3c;
+}
+
+.poste-input-group button.eliminar:hover {
+    background-color: #c0392b;
+}
+
+.formulario button, .tabla-desperfectos button {
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.formulario button.guardar {
+    background-color: #5cb85c;
+}
+
+.formulario button.guardar:hover {
+    background-color: #4cae4c;
+}
+
+.tabla-desperfectos {
+    flex-grow: 1;
+}
+
+#tabla-desperfectos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#tabla-desperfectos th, #tabla-desperfectos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-desperfectos th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#tabla-desperfectos tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.botones-tabla {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.botones-tabla button.eliminar {
+    background-color: #e74c3c;
+}
+
+.botones-tabla button.eliminar:hover {
+    background-color: #c0392b;
+}
+#agregar-poste, #exportar-excel {
+    color: #333; /* Cambia #333 por el color que desees (ej: negro, azul, etc.) */
+  background-color: #f39c12;
+}
+
+/* ... otros estilos ... */
+
+.contenedor-tablas {
+    display: flex;
+    gap: 30px;
+}
+
+.lista-desperfectos, .tabla-desperfectos {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lista-desperfectos {
+    width: 300px; /* Ajusta el ancho según necesites */
+}
+
+#tabla-lista-desperfectos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#tabla-lista-desperfectos th, #tabla-lista-desperfectos td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-lista-desperfectos th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+#tabla-lista-desperfectos tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabla-lista-desperfectos button {
+    background-color: #007bff; /* Color azul para el botón de acción */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+#tabla-lista-desperfectos button:hover {
+    background-color: #0056b3;
+}
+
+#actualizar-desperfecto {
+    background-color: #ffc107; /* Color amarillo para el botón actualizar */
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%; /* O el ancho que prefieras */
+}
+
+#actualizar-desperfecto:hover {
+    background-color: #e0a800;
+}
+
+/* ... otros estilos ... */
