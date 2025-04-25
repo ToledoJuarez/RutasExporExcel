@@ -221,3 +221,71 @@ body {
 }
 
 /* ... otros estilos ... */
+/* Estilos para pantallas de 768px de ancho o menos (tablets y móviles) */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Apila el formulario y las tablas verticalmente */
+        align-items: center; /* Centra horizontalmente */
+    }
+
+    .formulario {
+        width: 100%; /* El formulario ocupa todo el ancho disponible */
+        margin-bottom: 20px; /* Espacio debajo del formulario */
+    }
+
+    .contenedor-tablas {
+        flex-direction: column; /* Apila la lista y la tabla de detalles */
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    .lista-desperfectos {
+        width: 100%; /* La lista ocupa todo el ancho */
+        margin-bottom: 20px; /* Espacio debajo de la lista */
+    }
+
+    .tabla-desperfectos {
+        width: 100%; /* La tabla ocupa todo el ancho */
+    }
+
+    /* Ajustes para la tabla (importante para evitar desbordamiento) */
+    #tabla-detalle-desperfectos, #tabla-lista-desperfectos {
+        display: block;
+        overflow-x: auto; /* Añade scroll horizontal si es necesario */
+        white-space: nowrap; /* Evita que las celdas se rompan */
+    }
+
+    #tabla-detalle-desperfectos th, #tabla-detalle-desperfectos td,
+    #tabla-lista-desperfectos th, #tabla-lista-desperfectos td {
+        display: table-cell;
+        white-space: normal;
+    }
+
+    .botones-tabla {
+        flex-direction: column; /* Apila los botones en pantallas pequeñas */
+        align-items: stretch; /* Estira los botones para ocupar todo el ancho */
+    }
+
+    .botones-tabla button {
+        margin-bottom: 10px; /* Espacio entre los botones apilados */
+    }
+}
+
+/* Estilos para pantallas aún más pequeñas (móviles en vertical, opcional) */
+@media screen and (max-width: 480px) {
+    body {
+        margin: 10px; /* Reduce el margen del body */
+    }
+
+    .formulario h2, .tabla-desperfectos h2, .lista-desperfectos h2 {
+        font-size: 1.2em; /* Reduce el tamaño del título */
+    }
+
+    .poste-input-group {
+        flex-direction: column; /* Apila el input y el botón de eliminar */
+        align-items: stretch;
+    }
+
+    .poste-input-group input[type="text"] {
+        margin-bottom: 5px; /* Espacio entre el input y el botón */
+    }
+}
